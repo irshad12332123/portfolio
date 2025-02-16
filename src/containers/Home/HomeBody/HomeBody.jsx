@@ -11,7 +11,7 @@ const HomeBody = () => {
     gsap.fromTo(
       sideProfileLogoRef.current,
       { opacity: 0 },
-      { duration: 1, opacity: 1, y: -20, ease: "power3.out" }
+      { duration: 1, opacity: 1, ease: "power3.out" }
     );
     gsap.fromTo(
       homeContextRef.current,
