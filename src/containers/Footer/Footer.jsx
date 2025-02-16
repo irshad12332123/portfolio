@@ -1,6 +1,8 @@
 import React from "react";
 import CustomBlocks from "../../components/CustomBlocks/CustomBlocks";
 import CustomButton from "../../components/CustomButton/CustomButton";
+import { Link } from "react-scroll";
+
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -39,7 +41,9 @@ const Footer = () => {
               "I am always open to project improve your online presence",
             ]}
           />
-          <CustomButton text={"Contact Me"} type={"primary"} />
+          <Link to="Contact" smooth={true} duration={200}>
+            <CustomButton text={"Contact Me"} type={"primary"} />
+          </Link>
         </div>
       </div>
       <div

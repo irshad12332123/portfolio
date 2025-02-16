@@ -2,7 +2,6 @@
   padding: 0.55rem 1rem ;
    border: none;
    font-size: 0.85rem;
-   transition: background-color 500ms color 500ms;
 }
 .primary_btn{
   background-color: teal;
@@ -10,6 +9,12 @@
   padding: 0.65rem 1.5rem;
   border-radius: 0.25rem;
 }
+
+.error_btn{
+  color: red;
+  background-color: transparent;
+}
+
 .hover-btn:hover{
   /* border-bottom: solid 1px teal; */
   box-shadow: inset 0 -2px 0 0 teal;

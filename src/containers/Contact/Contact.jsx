@@ -4,15 +4,52 @@ import CustomBlocks from "../../components/CustomBlocks/CustomBlocks";
 import CustomInput from "../../components/CustomInput/CustomInput";
 import CustomButton from "../../components/CustomButton/CustomButton";
 import "./Contact.css";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
+
 const Contact = () => {
+  const showError = (msg) => {
+    MySwal.fire({
+      title: `Failure`,
+      text: `${msg}`,
+      icon: "error",
+      confirmButtonText: "Okay",
+    });
+  };
+
+  const showSuccess = (msg) => {
+    MySwal.fire({
+      title: `Success`,
+      text: `${msg}`,
+      icon: "success",
+      confirmButtonText: "Okay",
+    });
+  };
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  };
+    const response = await fetch("http://127.0.0.1:5000/feedback", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name: name, message: message, email: email }),
+    });
+    const data = await response.json();
 
+    console.log(data);
+    if (data.response === "success") {
+      showSuccess(data.msg);
+    } else {
+      showError(data.msg);
+    }
+  };
   return (
     <>
       <div name="Contact" className="contact-section">
