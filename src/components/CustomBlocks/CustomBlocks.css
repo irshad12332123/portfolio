@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+
+  .block-content-title {
+    max-width: 100% !important;
+    font-size: 1.2rem !important;
+  }
+  .block-content-para{
+    max-width: 100% !important;
+
+  }
+}

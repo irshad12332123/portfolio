@@ -1,0 +1,20 @@
+.contact-section{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-section{
+    padding: 3rem 2rem;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .contact-section{
+    padding: 3rem 2rem;
+  }
+}

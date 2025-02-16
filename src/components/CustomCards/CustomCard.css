@@ -1,0 +1,17 @@
+.custom-card{
+  padding: 1rem;
+  background-color: #F7F7F7;
+  border-radius: 0.25rem;
+}
+@media screen and (max-width: 600px) {
+  .custom-card{
+    width: 100%;
+  }
+  .custom-card-title-block{
+    display: flex;
+    gap: 2rem;
+  }
+  .custom-card-title-block > h4{
+    max-width: 100% !important;
+  }
+}

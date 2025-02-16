@@ -1,0 +1,24 @@
+/* parent container styles */
+.home-container {
+  height: 100%;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* side-profile styles */
+.side-profile-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  /* For small widths */
+  .home-container{
+    flex-direction: column;
+  }
+  .side-profile-styles{
+    flex-direction: row;
+    align-items: center;
+  }
+}

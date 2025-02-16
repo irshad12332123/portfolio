@@ -1,0 +1,25 @@
+.about-section{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  justify-content: center;
+  background-color: #FEF2F2;
+}
+
+
+@media screen and (max-width: 870px) {
+  .about-section{
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-body{
+    padding: 3rem 2rem;
+  }
+  .services-outer-frame{
+    flex-direction: column;
+  }
+}

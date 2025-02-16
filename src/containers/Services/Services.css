@@ -1,0 +1,34 @@
+.services-body{
+  height: 100%;
+        width: 100%;
+        display: flex;
+        padding: 3rem 10rem;
+        justify-content: center;
+        align-items: center;
+  }
+
+.services-outer-frame{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 4rem
+}
+.services-card{
+  display: flex;
+  gap:1rem;
+}
+
+@media screen and (max-width: 870px) {
+  .services-body{
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-body{
+    padding: 3rem 2rem;
+  }
+  .services-outer-frame{
+    flex-direction: column;
+  }
+}
