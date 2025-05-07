@@ -14,7 +14,7 @@ const HomeContent = forwardRef((props, ref) => {
               fontWeight: 700,
             }}
           >
-            Hello, I'm Md Irshad An Web Developer
+            Hello, I am Md Irshad A Software Developer
           </h5>
           <p
             style={{
